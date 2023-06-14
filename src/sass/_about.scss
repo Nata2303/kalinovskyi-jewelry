@@ -1,0 +1,18 @@
+.about{
+margin-top: 20px;
+}
+.titel-about{
+    text-align: center;
+}
+
+.list-text{
+   text-align: justify;
+   margin-bottom: 15px;
+}
+
+.about-name{
+    font-weight: 500;
+    background-image: var(--background-gradient-one);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

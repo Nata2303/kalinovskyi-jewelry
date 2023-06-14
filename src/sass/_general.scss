@@ -3,16 +3,10 @@
   --text-and-background-color-two: #121212;
   --subtitel-and-background-color: #484848;
   --text-and-background-color-three: #173F35;
-  --background-gradient-two: linear-gradient(
-    0deg,
-    rgba(18, 18, 18, 0.2),
-    rgba(18, 18, 18, 0.2)
-  );
-  --background-gradient-one: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 70.73%,
-    #121212 98.51%
-  );
+  --background-gradient-two:
+    linear-gradient(135deg, #02450f 0%, #010019 100%);
+  --background-gradient-one: 
+  linear-gradient(135deg, #55fb76 0%, #0b023a 100%);
   --cubik-bezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
@@ -37,9 +31,8 @@ body {
   cursor: pointer;
 }
 .button:focus{
-  background-color: inherit;
-  border: 2px;
-  border-color: #484848;
+  background-image: var(--background-gradient-two
+  );
 }
 
 .container {

@@ -108,7 +108,7 @@
 
 .header {
   background-color: var(--text-and-background-color-two);
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .header-container {
@@ -156,7 +156,7 @@
 
 .contact-button {
   padding: 10px 10px;
-  background-color: var(--text-and-background-color-three);
+  background-image: var(--background-gradient-one);
   color: var(--text-and-background-color-one);
   border: none;
   border-radius: 5px;
@@ -230,7 +230,7 @@
   }
   .contact-button {
     padding: 10px 20px;
-    background-color: var(--text-and-background-color-three);
+    background-image: var(--background-gradient-one);
     color: var(--text-and-background-color-one);
     border: none;
     border-radius: 5px;
