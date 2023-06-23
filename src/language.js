@@ -1,38 +1,25 @@
-fetch('translations.json')
-  .then(response => response.json())
-  .then(translations => {
-    const currentLanguage = 'en'; // Здесь указываете текущий язык
+// Отримуємо вибраний елемент select
+const languageSelect = document.querySelector('.language-select');
 
-    const menuTranslations = translations[currentLanguage].menu;
-    const socialMediaTranslations = translations[currentLanguage].socialMedia;
-    const languageTranslations = translations[currentLanguage].language;
+// Слухаємо подію зміни вибраного значення
+languageSelect.addEventListener('change', function () {
+  // Отримуємо вибране значення мови
+  const selectedLanguage = languageSelect.value;
 
-    // Используйте переводы для каждой категории меню
-    document.getElementById('about-link').innerText = menuTranslations.about;
-    document.getElementById('contact-link').innerText =
-      menuTranslations.contact;
-    document.getElementById('catalog-link').innerText =
-      menuTranslations.catalog;
-    document.getElementById('stock-link').innerText = menuTranslations.stock;
-    document.getElementById('gallery-link').innerText =
-      menuTranslations.gallery;
-    document.getElementById('blogAboutStones-link').innerText =
-      menuTranslations.blogAboutStones;
-    document.getElementById('contactManager-link').innerText =
-      menuTranslations.contactManager;
-
-    // Используйте переводы для социальных медиа
-    document.getElementById('facebook-link').innerText =
-      socialMediaTranslations.facebook;
-    document.getElementById('instagram-link').innerText =
-      socialMediaTranslations.instagram;
-
-    // Используйте переводы для языков
-    document.getElementById('en-language').innerText = languageTranslations.en;
-    document.getElementById('ge-language').innerText = languageTranslations.ge;
-    document.getElementById('ua-language').innerText = languageTranslations.ua;
-    document.getElementById('ru-language').innerText = languageTranslations.ru;
-  })
-  .catch(error => {
-    console.error('Ошибка загрузки файла JSON:', error);
-  });
+  // Завантажуємо відповідний файл з перекладом
+  fetch(`translations/${selectedLanguage}.json`)
+    .then(response => response.json())
+    .then(data => {
+      // Оновлюємо текстові елементи на сторінці з використанням перекладу
+      document.getElementById('about-link').textContent = data.about;
+      document.getElementById('contact-link').textContent = data.contacts;
+      document.getElementById('catalog-link').textContent = data.catalog;
+      document.getElementById('stock-link').textContent = data.stock;
+      document.getElementById('gallery-link').textContent = data.gallery;
+      document.getElementById('blogAboutStones-link').textContent =
+        data.blogAboutStones;
+    })
+    .catch(error => {
+      console.log('Помилка завантаження файлу з перекладом:', error);
+    });
+});
