@@ -2,9 +2,29 @@
   background-color: var(--text-and-background-color-two);
   padding: 20px 0px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social {
   display: flex;
   gap: 20px;
+}
+.mobile-icon-footer{
+    width: 10px;
+  height: 10px;
+}
+.time-work{
+    color: white;
+    font-size: 12px;
+}
+.mail{
+    color: white;
+    font-size: 12px;
+}
+.copirate{
+    color: white;
+    font-size: 12px;
 }
