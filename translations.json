@@ -7,7 +7,7 @@
     "stock": "Stock",
     "gallery": "Gallery",
     "blogAboutStones": "Blog about stones",
-    "contactManager": "Contact Manager"
+    "contactManager-link": "Contact Manager"
   },
   "socialMedia": {
     "facebook": "Facebook",
@@ -18,31 +18,40 @@
     "ge": "ქართული",
     "ua": "Українська",
     "ru": "Русский"
+  },
+  "hero":{
+    "titelHiro": "Exquisite jewelry for true connoisseurs",
+    "hero": "View catalog"
   }
+  
 },
     "ge": {
-    "menu": {
-    "about": "ჩვენს შესახებ",
-    "contact": "კონტაქტი",
-    "catalog": "კატალოგი",
-    "stock": "მარაგი",
-    "gallery": "გალერეა",
-    "blogAboutStones": "ქვის ბლოგი",
-    "contactManager": "ონტაქტი მენეჯერი"
-  },
-  "socialMedia": {
-    "facebook": "ფეისბუქი",
-    "instagram": "ინსტაგრამი"
-  },
-  "language": {
-    "en": "English",
-    "ge": "ქართული",
-    "ua": "Українська",
-    "ru": "Русский"
-  }
-},
+      "menu": {
+        "about": "ჩვენს შესახებ",
+        "contact": "კონტაქტი",
+        "catalog": "კატალოგი",
+        "stock": "მარაგი",
+        "gallery": "გალერეა",
+        "blogAboutStones": "ქვის ბლოგი",
+        "contactManager": "ონტაქტი მენეჯერი"
+      },
+      "socialMedia": {
+        "facebook": "ფეისბუქი",
+        "instagram": "ინსტაგრამი"
+      },
+      "language": {
+        "en": "English",
+        "ge": "ქართული",
+        "ua": "Українська",
+        "ru": "Русский"
+      },
+      "hero": {
+        "titelHiro": "დახვეწილი სამკაულები ნამდვილი მცოდნეებისთვის",
+        "hero": "კატალოგის ნახვა"
+      }
+    },
 "ua": {
-    "menu": {
+  "menu": {
     "about": "Про нас",
     "contact": "Контакті",
     "catalog": "Каталог",
@@ -60,10 +69,14 @@
     "ge": "ქართული",
     "ua": "Українська",
     "ru": "Русский"
+  },
+  "hero": {
+    "titelHiro": "Вишукана ювелірна продукція для справжніх поціновувачів",
+    "hero": "Переглянути каталог"
   }
 },
 "ru": {
-    "menu": {
+  "menu": {
     "about": "О нас",
     "contact": "Контакты",
     "catalog": "Каталог",
@@ -81,6 +94,10 @@
     "ge": "ქართული",
     "ua": "Українська",
     "ru": "Русский"
+  },
+  "hero": {
+    "titelHiro": "Изысканная ювелирная продукция для истинных ценителей",
+    "hero": "Посмотреть каталог"
   }
 }
 }
