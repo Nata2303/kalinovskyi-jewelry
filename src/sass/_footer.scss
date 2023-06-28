@@ -41,14 +41,25 @@
 .copirate{
     color: white;
     font-size: 12px;
+    padding-right: 20px;
 }
 @media screen and (min-width: 768px){
     .footer-section {
   max-width: 768px;
 }
+.header-logo-footer{
+  width: 120px;
+  padding-left: 10px;
+}
 .footer {
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.footer-social {
+  gap: 10px;
 }
 }
 
@@ -56,8 +67,16 @@
     .footer-section {
   max-width: 1440px;
 }
+.header-logo-footer{
+  width: 150px;
+  padding-left: 20px;
+}
 .footer {
   flex-wrap: nowrap;
   justify-content: space-between;
+  flex-direction: row;
+}
+.footer-social {
+  gap: 20px;
 }
 }

@@ -1,8 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const gemCard = document.querySelector('.gem-card');
-  const gemDescription = document.querySelector('.gem-description');
+  const gemCards = document.querySelectorAll('.gem-card');
 
-  gemCard.addEventListener('click', function () {
-    gemDescription.style.display = 'block';
+  gemCards.forEach(function (gemCard) {
+    const gemDescription = gemCard.querySelector('.gem-description');
+    let isGemDescriptionVisible = false;
+
+    gemCard.addEventListener('click', function () {
+      if (isGemDescriptionVisible) {
+        gemDescription.style.display = 'none';
+        isGemDescriptionVisible = false;
+      } else {
+        gemDescription.style.display = 'block';
+        isGemDescriptionVisible = true;
+      }
+    });
   });
 });
