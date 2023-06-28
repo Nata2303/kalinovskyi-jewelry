@@ -1,0 +1,13 @@
+    .gem-card {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .gem-card img {
+      width: 150px;
+      height: auto;
+      margin-right: 10px;
+    }
+    .gem-card .gem-description {
+      display: none;
+    }

@@ -1,3 +1,6 @@
+.location{
+margin-bottom: 20px;
+}
 .location-title{
     text-align: center;
 }
@@ -6,3 +9,19 @@
     margin-top: 20px;
 }
 
+.location-address{
+  font-family:'Montserrat', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29; 
+}
+
+.location-link{
+  font-family:'Montserrat', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29; 
+  color: var(--background-gradient-two);  
+}
