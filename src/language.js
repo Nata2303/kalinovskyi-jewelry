@@ -45,6 +45,10 @@ var translations = {
       locationAddress: '1d floor, Tbel Abuselidze 5a , DS Mall, Batumi 6010',
       locationSuptitle: 'call us',
     },
+    footer: {
+      timeWork: 'Working Hours: 09:00 - 21:00',
+      copirate: 'All Rights Reserved © 2023. Kalinovskyi jewelry',
+    },
   },
   ge: {
     menu: {
@@ -89,6 +93,10 @@ var translations = {
       locationTitle: 'მდებარეობა',
       locationAddress: '1 სართული, ტბელ აბუსელიძის 5ა, DS Mall, ბათუმი 6010',
       locationSuptitle: 'დაგვირეკეთ',
+    },
+    footer: {
+      timeWork: 'სამუშაო საათები: 09:00 - 21:00',
+      copirate: 'ველა უფლება დაცულია © 2023. Kalinovskyi jewelry',
     },
   },
   ua: {
@@ -135,6 +143,10 @@ var translations = {
       locationAddress: '1 поверх, Тбел Абусеридзе 5А, DS Mall, Батумі 6010',
       locationSuptitle: 'подзвони нам',
     },
+    footer: {
+      timeWork: 'Часи роботи: 09:00 - 21:00',
+      copirate: 'Усі права захищені © 2023. Kalinovskyi jewelry',
+    },
   },
   ru: {
     menu: {
@@ -179,6 +191,10 @@ var translations = {
       locationTitle: 'ЛОКАЦИЯ',
       locationAddress: '1 этаж, Тбел Абусеридзе 5А, DS Mall, Батуми 6010',
       locationSuptitle: 'позвони нам',
+    },
+    footer: {
+      timeWork: 'Часы работы: 09:00 - 21:00',
+      copirate: 'Все права защищены © 2023. Kalinovskyi jewelry',
     },
   },
 };
@@ -227,6 +243,17 @@ function updateTranslations(languageKey) {
     var locationTranslationKey = locationElement.id.replace('-link', '');
     locationElement.textContent =
       translations[languageKey].location[locationTranslationKey];
+  }
+
+  // переклад для елементів зі секції "footer"
+  var footerSection = document.querySelector('.footer');
+  var footerElements = footerSection.getElementsByClassName('translate');
+
+  for (var j = 0; j < footerElements.length; j++) {
+    var footerElement = footerElements[j];
+    var footerTranslationKey = footerElement.id.replace('-link', '');
+    footerElement.textContent =
+      translations[languageKey].footer[footerTranslationKey];
   }
 }
 // Змінити мову
