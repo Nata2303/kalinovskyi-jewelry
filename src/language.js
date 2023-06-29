@@ -40,6 +40,11 @@ var translations = {
       listTextFive:
         'Each piece of jewelry has its own history. Buy jewelry as a gift for yourself or your loved ones. Create your own traditions, preserve family values, pass on precious jewelry by inheritance, because it is they who will never lose their greatness, but on the contrary, over the years their value and value will only increase.',
     },
+    location: {
+      locationTitle: 'LOCATION',
+      locationAddress: '1d floor, Tbel Abuselidze 5a , DS Mall, Batumi 6010',
+      locationSuptitle: 'call us',
+    },
   },
   ge: {
     menu: {
@@ -79,6 +84,11 @@ var translations = {
         'ძვირფასი ლითონები ყოველწლიურად იზრდება და ძვირფასი ქვების საბადოები თანდათან იწურება. ჩვენს მაღაზიაში შეგიძლიათ შეიძინოთ მაღალი ხარისხის სამკაულები გონივრულ ფასებში და ჩადოთ ფული თქვენი კაპიტალის დაზოგვისა და გაზრდის მიზნით.',
       listTextFive:
         'თითოეულ სამკაულს აქვს თავისი ისტორია. შეიძინეთ სამკაულები საჩუქრად თქვენთვის ან თქვენი საყვარელი ადამიანებისთვის. შექმენით საკუთარი ტრადიციები, შეინახეთ ოჯახური ფასეულობები, გადაეცით ძვირფასი სამკაულები მემკვიდრეობით, რადგან ისინი არიან, ვინც არასოდეს დაკარგავენ სიდიადეს, პირიქით, წლების განმავლობაში მათი ღირებულება და ღირებულება მხოლოდ გაიზრდება.',
+    },
+    location: {
+      locationTitle: 'მდებარეობა',
+      locationAddress: '1 სართული, ტბელ აბუსელიძის 5ა, DS Mall, ბათუმი 6010',
+      locationSuptitle: 'დაგვირეკეთ',
     },
   },
   ua: {
@@ -120,6 +130,11 @@ var translations = {
       listTextFive:
         'Кожна ювелірна прикраса зберігає свою історію. Купуйте прикраси в подарунок собі або своїм близьким. Створюйте свої традиції, зберігайте сімейні цінності, передавайте дорогоцінні прикраси у спадок, адже саме вони ніколи не втратить свою велич, а навпаки – з роками їхня цінність і вартість лише зростуть.',
     },
+    location: {
+      locationTitle: 'ЛОКАЦІЯ',
+      locationAddress: '1 поверх, Тбел Абусеридзе 5А, DS Mall, Батумі 6010',
+      locationSuptitle: 'подзвони нам',
+    },
   },
   ru: {
     menu: {
@@ -160,6 +175,11 @@ var translations = {
       listTextFive:
         'Каждое ювелирное украшение хранит в себе свою историю. Приобретайте украшения в подарок себе или своим близким. Создавайте свои традиции, сохраняйте семейные ценности, передавайте драгоценные украшения по наследству, ведь именно они никогда не утратят свое величие, а наоборот – с годами их ценность и стоимость лишь возрастут.',
     },
+    location: {
+      locationTitle: 'ЛОКАЦИЯ',
+      locationAddress: '1 этаж, Тбел Абусеридзе 5А, DS Mall, Батуми 6010',
+      locationSuptitle: 'позвони нам',
+    },
   },
 };
 
@@ -183,7 +203,8 @@ function updateTranslations(languageKey) {
   for (var k = 0; k < heroElements.length; k++) {
     var heroElement = heroElements[k];
     var heroTranslationKey = heroElement.id.replace('-link', '');
-    heroElement.textContent = translations[languageKey].hero[heroTranslationKey];
+    heroElement.textContent =
+      translations[languageKey].hero[heroTranslationKey];
   }
 
   // переклад для елементів зі секції "about"
@@ -193,7 +214,19 @@ function updateTranslations(languageKey) {
   for (var j = 0; j < aboutElements.length; j++) {
     var aboutElement = aboutElements[j];
     var aboutTranslationKey = aboutElement.id.replace('-link', '');
-    aboutElement.textContent = translations[languageKey].about[aboutTranslationKey];
+    aboutElement.textContent =
+      translations[languageKey].about[aboutTranslationKey];
+  }
+
+  // переклад для елементів зі секції "location"
+  var locationSection = document.querySelector('.location');
+  var locationElements = locationSection.getElementsByClassName('translate');
+
+  for (var j = 0; j < locationElements.length; j++) {
+    var locationElement = locationElements[j];
+    var locationTranslationKey = locationElement.id.replace('-link', '');
+    locationElement.textContent =
+      translations[languageKey].location[locationTranslationKey];
   }
 }
 // Змінити мову
