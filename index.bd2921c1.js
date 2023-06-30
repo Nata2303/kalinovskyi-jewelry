@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector("[data-menu-open]"),n=document.querySelector("[data-menu-close]"),t=document.getElementById("contactManager-link"),c=document.querySelector(".mobile-menu");document.querySelector("[data-modal]");e.addEventListener("click",(function(){c.classList.add("is-open")})),n.addEventListener("click",(function(){c.classList.remove("is-open")})),t.addEventListener("click",(function(){c.classList.remove("is-open")}))}));
+//# sourceMappingURL=index.bd2921c1.js.map
