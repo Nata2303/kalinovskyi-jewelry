@@ -48,6 +48,7 @@ var translations = {
     footer: {
       timeWork: 'Working Hours: 09:00 - 21:00',
       copirate: 'All Rights Reserved © 2023. Kalinovskyi jewelry',
+      contactManager: 'Contact Manager',
     },
   },
   ge: {
@@ -97,6 +98,7 @@ var translations = {
     footer: {
       timeWork: 'სამუშაო საათები: 09:00 - 21:00',
       copirate: 'ველა უფლება დაცულია © 2023. Kalinovskyi jewelry',
+      contactManager: 'ონტაქტი მენეჯერი',
     },
   },
   ua: {
@@ -146,6 +148,7 @@ var translations = {
     footer: {
       timeWork: 'Часи роботи: 09:00 - 21:00',
       copirate: 'Усі права захищені © 2023. Kalinovskyi jewelry',
+      contactManager: "Зв'язатісь з менеджером",
     },
   },
   ru: {
@@ -195,6 +198,7 @@ var translations = {
     footer: {
       timeWork: 'Часы работы: 09:00 - 21:00',
       copirate: 'Все права защищены © 2023. Kalinovskyi jewelry',
+      contactManager: 'Связаться с менеджером',
     },
   },
 };
