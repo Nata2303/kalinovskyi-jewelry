@@ -55,13 +55,14 @@
   background-color: var(--subtitel-and-background-color);
 }
 .close {
-  stroke: black;
+  // stroke: black;
   fill: black;
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
   display: block;
-  align-items: center;
-  margin: 0;
+  // align-items: center;
+  text-align: center;
+  // margin: 0;
   margin-left: auto;
   margin-right: auto;
   padding: 0;

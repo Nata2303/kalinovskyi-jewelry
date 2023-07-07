@@ -25,6 +25,7 @@
 
 .footer-social {
   display: flex;
+  flex-direction: row;
   gap: 20px;
 }
 .footer-social-item{
@@ -32,11 +33,10 @@
   height: 20px;
 }
 
-
-// .mobile-icon-footer {
-//   width: 20px;
-//   height: 20px;
-// }
+.mobile-icon-footer {
+  width: 20px;
+  height: 20px;
+}
 .icon-footer {
   display: flex;
   fill: var(--text-and-background-color-one);

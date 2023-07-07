@@ -1,5 +1,5 @@
   // Ініціалізація Swiper
-  const swiper = new Swiper('.gallery', {
+  const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
