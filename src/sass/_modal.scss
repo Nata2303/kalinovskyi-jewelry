@@ -52,7 +52,7 @@
   transition: transform 250ms var(--transition-timing-function--);
 }
 .modal-close:is(:hover, :focus) {
-  background-color: var(--aktiv-heder--);
+  background-color: var(--subtitel-and-background-color);
 }
 .close {
   stroke: black;
@@ -80,7 +80,7 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--menu-brand-color--);
+  color: var(--text-and-background-color-two);
 }
 .modal-input {
   width: 100%;
@@ -98,10 +98,10 @@
 }
 .modal-input:focus,
 .icon-modal:focus {
-  border-color: var(--aktiv-heder--);
+  border-color: var(--subtitel-and-background-color);
 }
 .modal-input:focus + .modal-icon {
-  fill: var(--aktiv-heder--);
+  fill: var(--text-and-background-color-two);
 }
 .input-wrap {
   position: relative;
@@ -124,8 +124,6 @@
 .icon-modal-footer {
   width: 18px;
   height: 24px;
-  stroke: currentColor;
-  fill: black;
 }
 .modal-textarea {
   width: 100%;
@@ -145,12 +143,12 @@
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-textarea:focus {
-  border-color: var(--subtitel-and-background-color--);
+  border-color: var(--subtitel-and-background-color);
 }
 
 .modal-check:checked span {
   background-color: var(--aktiv-heder--);
-  fill: var(--btn-brand-color--);
+  fill: var(--subtitel-and-background-color);
   border: none;
 }
 .btn-form {
@@ -164,17 +162,17 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  background: var(--primary-brand-color--);
+  background: var(--text-and-background-color-one);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
-  color: var(--btn-brand-color--);
+  color: var(--text-and-background-color-two);
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms var(--transition-timing-function--);
 }
 .btn-form:is(:hover, :focus) {
-  background-color: var(--aktiv-heder--);
+  background-color: var(--subtitel-and-background-color);
 }
 
 @media screen and (min-width: 768px) {
