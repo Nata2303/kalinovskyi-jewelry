@@ -1,4 +1,4 @@
-$(document).ready(function () {
+// $(document).ready(function () {
   const swiper = new Swiper('.gallery', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -28,13 +28,13 @@ $(document).ready(function () {
   });
 
   // Додавання класів і стилів до слайдів
-  $('.gallery-img').each(function (index) {
-    $(this).addClass('swiper-slide');
-    if (index === 0) {
-      $(this).addClass('swiper-slide-active');
-    }
-  });
+  // $('.gallery-img').each(function (index) {
+  //   $(this).addClass('swiper-slide');
+  //   if (index === 0) {
+  //     $(this).addClass('swiper-slide-active');
+  //   }
+  // });
 
   // Оновлення Swiper після додавання слайдів
   swiper.update();
-});
+// });

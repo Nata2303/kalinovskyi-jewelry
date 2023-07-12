@@ -3,7 +3,7 @@ var languageKey = 'en';
 var translations = {
   en: {
     menu: {
-      about: 'About Us',
+      about: 'About US',
       contact: 'Contact',
       catalog: 'Catalog',
       stock: 'Stock',
@@ -49,6 +49,19 @@ var translations = {
       timeWork: 'Working Hours: 09:00 - 21:00',
       copirate: 'All Rights Reserved © 2023. Kalinovskyi jewelry',
       contactManager: 'Contact Manager',
+    },
+    blogAboutStones: {
+      titelGemSaphire: 'SAPPHIRE',
+      textSaphire:'Both ruby and sapphire are precious varieties of the same mineral, corundum, aluminum oxide, which is close in hardness to diamond. While sapphire is usually considered blue, it can also be colorless, green, yellow, orange, purple, and pink, among other shades. Until the end of the 19th century, when geologists realized that sapphires of all colors are the same mineral, the terminology regarding the name of the gemstone was preserved from the Middle Ages: green sapphire was called oriental peridot, and yellow sapphire was called oriental topaz. One of the oldest known stones clearly identified as a sapphire is St. Edward`s Sapphire: thought to date from the crown of the Anglo-Saxon King Edward the Confessor in 1042. Fancy Sapphires With three exceptions, modern terminology simply uses the word "sapphire" preceded by the color of the stone, such as yellow sapphire or green sapphire. The two exceptions are rare pink-orange stones called padparadscha (Sanskrit for "lotus flower"), and a sapphire that appears blue in daylight and reddish or purple in artificial light, called alexandrine or alexandrite sapphire. The third exception is blue sapphire, which is simply referred to as "sapphire". Colors other than blue are often referred to as fancy sapphires. Many sapphires, regardless of their color, have microscopic inclusions of rutile that form a star when cut cabochon.',
+      tatelGemSecondSaphire: 'Specification:',
+      textSecondSaphire: 'Chemical Name Aluminum Oxide / Formula Al<span class="align">2</span>0<span class="align">3</span>/ Colors: Most colors / Structure Hexagonal, triangular / Hardness 9 / SG 4.0-4.1 / RI 1.76-1.77 / Shine from Adamantine tovitreous / streak Colorless.',
+      titelGemThreeSaphire: 'Deposits:',
+      textThreeSaphireOne: '1. Montana, North Carolina, USA',
+      textThreeSaphireTwo: '2. Kenya',
+      textThreeSaphireThree: '3. Madagascar',
+      textThreeSaphireFour: '4. India',
+      textThreeSaphireFive: '5. Sri Lanka',
+      textThreeSaphireSix: '6. Myanmar',
     },
   },
   ge: {
@@ -253,13 +266,29 @@ function updateTranslations(languageKey) {
   var footerSection = document.querySelector('.footer');
   var footerElements = footerSection.getElementsByClassName('translate');
 
-  for (var j = 0; j < footerElements.length; j++) {
-    var footerElement = footerElements[j];
+  for (var s = 0; s < footerElements.length; s++) {
+    var footerElement = footerElements[s];
     var footerTranslationKey = footerElement.id.replace('-link', '');
     footerElement.textContent =
       translations[languageKey].footer[footerTranslationKey];
   }
+
+  // переклад для елементів зі секції "blogAboutStouns"
+  var blogAboutStonesSection = document.querySelector('.blog');
+  var blogAboutStonesElements =
+    blogAboutStonesSection.getElementsByClassName('translate');
+
+  for (var j = 0; j < blogAboutStonesElements.length; j++) {
+    var blogAboutStonesElement = blogAboutStonesElements[j];
+    var blogAboutStonesTranslationKey = blogAboutStonesElement.id.replace(
+      '-link',
+      ''
+    );
+    blogAboutStonesElement.textContent =
+      translations[languageKey].blogAboutStones[blogAboutStonesTranslationKey];
+  }
 }
+
 // Змінити мову
 function changeLanguage(languageKey) {
   updateTranslations(languageKey);
