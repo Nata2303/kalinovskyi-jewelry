@@ -26,6 +26,14 @@
     .swiper-button-next, .swiper-button-prev {
     color: var(--text-and-background-color-three);
 }
+
+.slider-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: visibility 250ms linear, opacity 250ms linear;
+}
+
     @media screen and (min-width: 768px){
 .swiper {
   width: 650px;
