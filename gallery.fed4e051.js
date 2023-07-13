@@ -1,2 +1,0 @@
-$(document).ready((function(){const e=new Swiper(".gallery",{slidesPerView:1,spaceBetween:10,breakpoints:{320:{slidesPerView:1,spaceBetween:20},650:{slidesPerView:2,spaceBetween:30},1040:{slidesPerView:3,spaceBetween:40}},loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});$(".gallery-img").each((function(e){$(this).addClass("swiper-slide"),0===e&&$(this).addClass("swiper-slide-active")})),e.update()}));
-//# sourceMappingURL=gallery.fed4e051.js.map
