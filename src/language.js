@@ -364,18 +364,18 @@ function updateTranslations(languageKey) {
   // }
 
   // Переклад для елементів модалки
-  var modalTextElement = document.getElementById('modalText-link');
-  var nameLabelElement = document.getElementById('nameLabel-link');
-  var phoneLabelElement = document.getElementById('phoneLabel-link');
-  var commentLabelElement = document.getElementById('commentLabel-link');
-  var sendButtonElement = document.getElementById('sendButton-link');
+  // var modalTextElement = document.getElementById('modalText-link');
+  // var nameLabelElement = document.getElementById('nameLabel-link');
+  // var phoneLabelElement = document.getElementById('phoneLabel-link');
+  // var commentLabelElement = document.getElementById('commentLabel-link');
+  // var sendButtonElement = document.getElementById('sendButton-link');
 
-  modalTextElement.textContent = translations[languageKey].modal.modalText;
-  nameLabelElement.textContent = translations[languageKey].modal.nameLabel;
-  phoneLabelElement.textContent = translations[languageKey].modal.phoneLabel;
-  commentLabelElement.textContent =
-    translations[languageKey].modal.commentLabel;
-  sendButtonElement.textContent = translations[languageKey].modal.sendButton;
+  // modalTextElement.textContent = translations[languageKey].modal.modalText;
+  // nameLabelElement.textContent = translations[languageKey].modal.nameLabel;
+  // phoneLabelElement.textContent = translations[languageKey].modal.phoneLabel;
+  // commentLabelElement.textContent =
+  //   translations[languageKey].modal.commentLabel;
+  // sendButtonElement.textContent = translations[languageKey].modal.sendButton;
 }
 
 // Змінити мову
