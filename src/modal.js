@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       phoneInput: document.getElementById('phone'),
       commentInput: document.getElementById('comment'),
       modalForm: document.querySelector('.modal-form'),
+      slider: document.querySelector('.gallery'), // елемент слайдера
     };
 
     refs.openModalBtn.addEventListener('click', openModal);
@@ -18,15 +19,19 @@ document.addEventListener('DOMContentLoaded', function () {
     refs.openThreeModalBtn.addEventListener('click', openModal);
     refs.closeModalBtn.addEventListener('click', closeModal);
     refs.modalForm.addEventListener('submit', handleSubmit);
+    refs.slider.addEventListener('click', openModal);
+    refs.slider.addEventListener('click', closeModal);
 
     function openModal() {
       refs.modal.classList.add('is-visible');
       refs.backdrop.classList.add('is-visible');
+      refs.slider.classList.add('slider-hidden'); // додати клас для приховування слайдера
     }
 
     function closeModal() {
       refs.modal.classList.remove('is-visible');
       refs.backdrop.classList.remove('is-visible');
+      refs.slider.classList.remove('slider-hidden'); // видалити клас для показу слайдера
     }
 
     function handleSubmit(event) {
