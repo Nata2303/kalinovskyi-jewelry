@@ -1,0 +1,2 @@
+$(document).ready((function(){new Swiper(".gallery",{slidesPerView:1,spaceBetween:10,breakpoints:{320:{slidesPerView:1,spaceBetween:20},650:{slidesPerView:2,spaceBetween:30},1040:{slidesPerView:3,spaceBetween:40}},loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"bullets"}})})),swiper.update();
+//# sourceMappingURL=stock.ddcab3d8.js.map
