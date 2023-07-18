@@ -1,4 +1,6 @@
-$(document).ready(function () {
+// import Swiper from 'swiper';
+
+// $(document).ready(function () {
   const swiper = new Swiper('.gallery', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -17,7 +19,7 @@ $(document).ready(function () {
       // when window width is >= 1040px
       1040: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
     },
     loop: true,
@@ -25,12 +27,12 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-});
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
   });
-  // Оновлення Swiper після додавання слайдів
-  swiper.update();
+// });
+// Оновлення Swiper після додавання слайдів
+// Swiper.update();
 // });

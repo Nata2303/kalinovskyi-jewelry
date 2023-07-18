@@ -1,23 +1,23 @@
-.saleForOpen{
+.saleForOpen {
 width: 320px;
 position: relative;
 margin: 0%;
 padding: 0;
 }
 
-.saleForOpen-img{
+.saleForOpen-img {
   width: 320px; 
   padding: 0px 10px; 
   margin: 10px auto;
 }
 
-.titel-sale{
+.titel-sale {
     position: absolute;
     top: 10px;
-    left: 110px;
+    left: 80px;
 }
 
-.procent{
+.procent {
     font-size: 70px;
     font-weight: 700;
     color: var(--background-gradient-two);
@@ -47,7 +47,7 @@ padding: 0;
   top: 0;
   left: 0;
   width: 300px;
-  height: 200px;
+  height: 180px;
   background-color: rgba(60, 83, 67, 0.695);
   color: #fff;
   opacity: 0;

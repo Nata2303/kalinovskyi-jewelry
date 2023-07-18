@@ -20,18 +20,18 @@ document.addEventListener('DOMContentLoaded', function () {
     refs.closeModalBtn.addEventListener('click', closeModal);
     refs.modalForm.addEventListener('submit', handleSubmit);
     refs.slider.addEventListener('click', openModal);
-    refs.slider.addEventListener('click', closeModal);
+    refs.slider.addEventListener('click', closeModal); // Добавлено событие закрытия модального окна при клике на фон
 
     function openModal() {
       refs.modal.classList.add('is-visible');
       refs.backdrop.classList.add('is-visible');
-      refs.slider.classList.add('slider-hidden'); // додати клас для приховування слайдера
+      refs.slider.classList.add('slider-hidden'); // Добавлен класс для скрытия слайдера
     }
 
     function closeModal() {
       refs.modal.classList.remove('is-visible');
       refs.backdrop.classList.remove('is-visible');
-      refs.slider.classList.remove('slider-hidden'); // видалити клас для показу слайдера
+      refs.slider.classList.remove('slider-hidden'); // Удален класс для показа слайдера
     }
 
     function handleSubmit(event) {
@@ -40,16 +40,16 @@ document.addEventListener('DOMContentLoaded', function () {
       const phone = refs.phoneInput.value;
       const comment = refs.commentInput.value;
 
-      // Отримуємо раніше збережений масив даних з localStorage або створюємо новий пустий масив
+      // Получаем ранее сохраненный массив данных из localStorage или создаем новый пустой массив
       const savedData = JSON.parse(localStorage.getItem('formData')) || [];
 
-      // Додаємо новий об'єкт з відправленими даними до масиву
+      // Добавляем новый объект с отправленными данными в массив
       savedData.push({ name, phone, comment });
 
-      // Зберігаємо оновлений масив даних у localStorage
+      // Сохраняем обновленный массив данных в localStorage
       localStorage.setItem('formData', JSON.stringify(savedData));
 
-      // Закриваємо модальне вікно
+      // Закрываем модальное окно
       closeModal();
     }
   })();
