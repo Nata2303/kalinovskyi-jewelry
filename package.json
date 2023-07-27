@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Nata2303.github.io/kalinovskyi-jewelry",
+  "homepage": "http://kalinovskyijewelry.ge",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /kalinovskyi-jewelry/"

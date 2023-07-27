@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
       refs.modal.classList.add('is-visible');
       refs.backdrop.classList.add('is-visible');
       refs.slider.classList.add('slider-hidden'); // Добавлен класс для скрытия слайдера
+
+      updateTranslations(languageKey);
     }
 
     function closeModal() {
