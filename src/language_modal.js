@@ -62,3 +62,4 @@ languageSelect.addEventListener('change', function () {
 
 // Початкова ініціалізація перекладів
 updateTranslations('en');
+
