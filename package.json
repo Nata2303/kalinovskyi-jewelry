@@ -5,8 +5,8 @@
   "homepage": "https:///kalinovskyijewelry.ge",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url ''"
-    
+    "build": "parcel build src/*.html --public-url"
+
   },
   "repository": {
     "type": "git",
